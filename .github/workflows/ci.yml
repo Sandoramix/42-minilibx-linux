@@ -2,7 +2,7 @@ name: Build
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, feature/refactor ]
   pull_request:
     branches: [ master ]
 
@@ -42,7 +42,7 @@ jobs:
         elif [ "$RUNNER_OS" == "macOS" ]; then
             brew install xdotool
             defaults write org.x.X11 enable_test_extensions -boolean true
-            sudo Xvfb $DISPLAY -screen 0 1280x1024x24 &           
+            sudo Xvfb $DISPLAY -screen 0 1280x1024x24 &
         else
             echo "$RUNNER_OS not supported"
             exit 1
@@ -79,7 +79,7 @@ jobs:
             leaks mlx-test
             pkill mlx-test
         fi
- 
+
     - name: Norminette, just for fun
       continue-on-error: true
       run: |
