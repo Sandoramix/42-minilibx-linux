@@ -6,7 +6,7 @@
 #    By: odudniak <odudniak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/06 10:31:36 by odudniak          #+#    #+#              #
-#    Updated: 2025/07/06 10:31:39 by odudniak         ###   ########.fr        #
+#    Updated: 2025/07/06 17:59:48 by odudniak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,38 +21,38 @@ endif
 NAME		= libmlx.a
 NAME_UNAME	= libmlx_$(UNAME).a
 
-SRC = ./mlx_clear_window.c \
-	./mlx_destroy_display.c \
-	./mlx_destroy_image.c \
-	./mlx_destroy_window.c \
-	./mlx_expose_hook.c \
-	./mlx_ext_randr.c \
-	./mlx_flush_event.c \
-	./mlx_get_color_value.c \
-	./mlx_get_data_addr.c \
-	./mlx_hook.c \
-	./mlx_int_do_nothing.c \
-	./mlx_int_get_visual.c \
+SRC = ./mlx_ext_randr.c \
 	./mlx_int_param_event.c \
-	./mlx_int_set_win_event_mask.c \
 	./mlx_int_str_to_wordtab.c \
-	./mlx_int_wait_first_expose.c \
-	./mlx_key_hook.c \
 	./mlx_loop.c \
 	./mlx_loop_hook.c \
 	./mlx_mouse.c \
-	./mlx_mouse_hook.c \
 	./mlx_new_image.c \
 	./mlx_pixel_put.c \
 	./mlx_put_image_to_window.c \
 	./mlx_rgb.c \
-	./mlx_screen_size.c \
-	./mlx_set_font.c \
 	./mlx_string_put.c \
 	./mlx_xpm.c \
+	./src/_mlx_normalize_color.c \
+	./src/_mlx_set_win_event_mask.c \
 	./src/init/_mlx_rgb_convert.c \
 	./src/init/mlx_init.c \
+	./src/mlx_clear_window.c \
+	./src/mlx_destroy_display.c \
+	./src/mlx_destroy_image.c \
+	./src/mlx_destroy_window.c \
+	./src/mlx_expose_hook.c \
+	./src/mlx_flush_event.c \
+	./src/mlx_get_color_value.c \
+	./src/mlx_get_data_addr.c \
+	./src/mlx_hook.c \
+	./src/mlx_key_hook.c \
+	./src/mlx_mouse_hook.c \
+	./src/mlx_screen_size.c \
+	./src/mlx_set_font.c \
 	./src/new_window/mlx_new_window.c
+
+
 
 
 OBJ_DIR = obj

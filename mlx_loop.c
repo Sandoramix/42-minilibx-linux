@@ -1,9 +1,9 @@
 /*
-** mlx_loop.c for MiniLibX in 
-** 
+** mlx_loop.c for MiniLibX in
+**
 ** Made by Charlie Root
 ** Login   <ol@epitech.net>
-** 
+**
 ** Started on  Wed Aug  2 18:58:11 2000 Charlie Root
 ** Last update Fri Sep 30 14:47:41 2005 Olivier Crouzet
 */
@@ -39,7 +39,7 @@ int			mlx_loop(t_xvar *xvar)
 	XEvent		ev;
 	t_win_list	*win;
 
-	mlx_int_set_win_event_mask(xvar);
+	_mlx_set_win_event_mask(xvar);
 	xvar->do_flush = 0;
 	while (win_count(xvar) && !xvar->end_loop)
 	{

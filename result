@@ -18,7 +18,6 @@ int				mlx_mouse_move(t_xvar *xvar, t_win_list *win, int x, int y);
 int				mlx_mouse_show(t_xvar *xvar, t_win_list *win);
 void			*mlx_new_image(t_xvar *xvar,int width, int height);
 void			*mlx_new_image2(t_xvar *xvar,int width, int height);
-void			*mlx_new_window(t_xvar *xvar,int size_x,int size_y,char *title);
 int				mlx_pixel_put(t_xvar *xvar,t_win_list *win, int x,int y,int color);
 int				mlx_put_image_to_window(t_xvar *xvar,t_win_list *win,t_img *img, int x,int y);
 void			mlx_set_font(t_xvar *xvar, t_win_list *win, char *name);
