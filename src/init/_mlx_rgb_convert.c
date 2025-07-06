@@ -6,7 +6,7 @@
 /*   By: odudniak <odudniak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/06 09:50:50 by odudniak          #+#    #+#             */
-/*   Updated: 2025/07/06 09:51:54 by odudniak         ###   ########.fr       */
+/*   Updated: 2025/07/06 10:23:41 by odudniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /**
  * TrueColor Visual is needed to have *_mask correctly set
 */
-static void	_mlx_rgb_convert(t_xvar *xvar, int decrdb_idx, int *color)
+static void	_mlx_rgb_convert(t_xvar *xvar, int decrdb_idx, size_t *color)
 {
 	while (!(*color & 1))
 	{

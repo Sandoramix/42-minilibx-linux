@@ -34,7 +34,8 @@
 #include	"mlx_int.h"
 
 
-void	*mlx_init();
+t_xvar		*mlx_init(void);
+
 /*
 **  needed before everything else.
 **  return (void *)0 if failed
@@ -45,7 +46,7 @@ void	*mlx_init();
 ** Basic actions
 */
 
-void	*mlx_new_window(void *mlx_ptr, int size_x, int size_y, char *title);
+t_win_list	*mlx_new_window(t_xvar *xvar, int size_x, int size_y, char *title);
 /*
 **  return void *0 if failed
 */
@@ -62,7 +63,7 @@ int	mlx_pixel_put(void *mlx_ptr, void *win_ptr, int x, int y, int color);
 ** Image stuff
 */
 
-void	*mlx_new_image(void *mlx_ptr,int width,int height);
+void		*mlx_new_image(void *mlx_ptr,int width,int height);
 /*
 **  return void *0 if failed
 **  obsolete : image2 data is stored using bit planes
